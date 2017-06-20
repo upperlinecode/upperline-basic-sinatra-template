@@ -1,1 +1,18 @@
-<h1> This is a view </h1>
+<html>
+    <head>
+ <!--in application controller, the folder 'public' is set as a public folder so you can assume you're standing in it-->
+    <link rel="stylesheet" href="css/style.css"> 
+    </head>
+    
+    <body>
+        <h1>Welcome to my first Sinatra App</h1>
+        <form method="post" action="/twistedsentence">
+            <label for="name">Type your name here.</label>
+            <input type="text" name="name">
+            <br><br>
+            <label for="age">How old are you?</label> 
+            <input type="number" name="age">
+            <input type="submit" value="find your fortune!">
+        </form>
+    </body>
+</html>

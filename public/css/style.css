@@ -1,7 +1,10 @@
-body {
-    background-color:black;
+@import url('https://fonts.googleapis.com/css?family=Chewy');
+* {
+ background-color:black;
+ font-family: 'Chewy', cursive; 
 }
 
 h1 {
     color:yellow;
 }
+

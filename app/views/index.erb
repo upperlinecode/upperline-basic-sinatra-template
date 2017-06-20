@@ -5,14 +5,21 @@
     </head>
     
     <body>
-        <h1>Welcome to my first Sinatra App</h1>
-        <form method="post" action="/twistedsentence">
-            <label for="name">Type your name here.</label>
-            <input type="text" name="name">
-            <br><br>
-            <label for="age">How old are you?</label> 
-            <input type="number" name="age">
-            <input type="submit" value="find your fortune!">
+        <h1>WELCOME TO JOKE GENERATOR™!!!!</h1>
+        <h2 id=header2_1> Do too many people like you/enjoy your prescense? JOKE GENERATOR™ can change that! </h2>
+        <h2 id=header2_2> Customize you joke here! </h2>
+            <form method="post" action ="/customjoke">
+        <h3 id=header3_1> What kinds of jokes do you like? </h3>
+                <input type="radio" name="theme" value="animal"> Animal Jokes<br>
+                <input type="radio" name="theme" value="bar"> Bar Jokes<br>
+                <input type="radio" name="theme" value="knock-knock"> Knock-Knock Jokes<br>
+        <h3 id=header3_2> What is the quality of the joke? </h3>
+                <input type="radio" name="quality" value="good"> Good<br>
+                <input type="radio" name="quality" value="cringy"> Cringy<br>
+        <h3 id=header3_3> What long is the length of the joke? </h3>
+                <input type="radio" name="length" value="long"> Long<br>
+                <input type="radio" name="length" value="short"> Short<br>
         </form>
+
     </body>
 </html>

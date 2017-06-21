@@ -10,4 +10,13 @@ class ApplicationController < Sinatra::Base
   get '/' do
     erb :index
   end
+  
+  post "/customjoke" do
+    @theme = params["theme"]
+    @quality = params["quality"]
+    @length = params["length"]
+    @answer = "#{joke(@theme, @quality, @length)}"
+    erb :jokepage
+  end
+  
 end

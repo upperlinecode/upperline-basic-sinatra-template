@@ -1,1 +1,33 @@
-<h1> This is a view </h1>
+<html>
+    <head>
+ <!--in application controller, the folder 'public' is set as a public folder so you can assume you're standing in it-->
+    <link rel="stylesheet" href="css/style.css"> 
+    </head>
+    
+    <body>
+        <h1>WELCOME TO JOKE GENERATOR™!!!!</h1>
+        <h2 id="header2-1"> Do too many people like you/enjoy your presence? JOKE GENERATOR™ can change that! </h2>
+        <h2 id="header2-2"> Customize you joke here! </h2>
+        <form method="post" action ="/customjoke">
+            <h3 id="header3-1"> What kinds of jokes do you like? </h3>
+                <input type="radio" name="theme" value="animal"> Animal Jokes<br>
+                <input type="radio" name="theme" value="bar"> Bar Jokes<br>
+                <input type="radio" name="theme" value="knock-knock"> Knock-Knock Jokes<br>
+            <h3 id="header3-2"> What is the quality of the joke? </h3>
+                <input type="radio" name="quality" value="good"> Good<br>
+                <input type="radio" name="quality" value="cringy"> Cringy<br>
+            <h3 id="header3-3"> What is the length of the joke? </h3>
+                <input type="radio" name="length" value="long"> Long<br>
+                <input type="radio" name="length" value="short"> Short<br>
+        
+            <input type="submit" value="Click here to get your next crowd pleaser!">
+        </form>
+        
+        <figure>
+  <img src="https://www.google.com/search?q=animal+jokes&safe=active&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjAo-Xeg8_UAhWFNz4KHWyeCW0Q_AUICigB&biw=1157&bih=700#imgrc=R94cVl8sJtUjcM:" alt="The Pulpit Rock" width="304" height="228">
+  <figcaption>ANIMAL JOKES!</figcaption>
+        </figure>
+    
+
+    </body>
+</html>

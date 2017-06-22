@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Bubbler+One');
 /*background color rgb(85, 180, 212)*/
 
 body {
@@ -6,15 +7,18 @@ body {
     background-color:rgb(85, 180, 212);
     color:white;
     text-align: center;
-    
-}
-
-.white {
-    text-align:center;
 }
 
 #button {
     font-family: 'Lobster', cursive;
     color:white;
     background-color:rgb(85, 180, 212);
+}
+
+p {
+    font-family: 'Bubbler One', sans-serif;
+}
+
+h3 {
+    font-family: 'Bubbler One', sans-serif;
 }

@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+/*background color rgb(85, 180, 212)*/
+
+* {
+    font-family: 'Lobster', cursive;
+    background-color:rgb(85, 180, 212);
+    color:white;
+}
+
+#white {
+    text-align:center;
+}

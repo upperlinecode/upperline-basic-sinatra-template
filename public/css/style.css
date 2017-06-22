@@ -1,17 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
 .title {
-    font-size: 300%;
     font-family: 'Raleway';
-}
-body {
     background-image: url("/images/TitlePhoto.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    text-indent: 10px;
-    /*height: 104%;*/
-    /*margin: -65px -10px 0px;*/
+    height: 103%;
+    margin: ;
 }
+
+h1 {
+    font-size: 600%;
+    padding-left: 20px;
+}
+
 .questions {
-    
+    background-color: lightblue;
 }

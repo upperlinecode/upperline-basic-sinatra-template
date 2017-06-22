@@ -5,8 +5,16 @@ body {
     font-family: 'Lobster', cursive;
     background-color:rgb(85, 180, 212);
     color:white;
+    text-align: center;
+    
 }
 
 .white {
     text-align:center;
+}
+
+#button {
+    font-family: 'Lobster', cursive;
+    color:white;
+    background-color:rgb(85, 180, 212);
 }

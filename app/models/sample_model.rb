@@ -34,7 +34,6 @@ class Workout
         elsif intensity == "hard"
             # hardwod
         end
-        if 
     end
     
 end

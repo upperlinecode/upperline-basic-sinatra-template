@@ -12,6 +12,13 @@ class ApplicationController < Sinatra::Base
   end
   
   post "/results" do
+    @intensity = params["intensity"]
+    @length = params["length"]
+    @type = params["type"]
+    @location = params["location"]
+    @topic = params["topic"]
+    @workout = Workout.new(@intensity,@length,@type,@location,@topic)
+    @workout.wodmaker
     erb :results
   end
 end

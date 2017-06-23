@@ -4,6 +4,12 @@
     </head>
         <body>
             <h1>Workout Overview</h1>
-            <%= @workout %>
+            <h3><%= @workout.rounds %></h3>
+            <ul>
+                <% @workout.wod %>
+                <% @workout.wod.each do |rep| %>
+                <li><%= rep + "<br>" %></li>
+                <% end %>
+            </ul>
         </body>
 </html>

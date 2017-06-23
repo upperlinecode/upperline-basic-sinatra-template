@@ -27,9 +27,11 @@ h3 {
 }
 
 #img1 {
-    justify:left;
+    position: absolute;
+    right: 0px;
 }
 
 #img2 {
-    justify:right;
+    position: absolute;
+    left: 0px;
 }

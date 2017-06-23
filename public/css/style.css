@@ -9,6 +9,7 @@
 #title {
     background-image: url("../images/TitlePhoto.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
     height: 100%;
     font-size: 1000%;
     font-weight: 900;
@@ -37,3 +38,31 @@
     margin-bottom: -90px;
 }
 
+#resBod {
+    background-image: url("../images/ResultBackground.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    color: white;
+    font-family: 'Raleway';
+    font-size: 150%;
+}
+
+#resTitle {
+    text-align: center;
+}
+
+#resPic {
+    float: right;
+    margin-right: 100px;
+    margin-top: -45px;
+    width: 550px;
+}
+
+#routine {
+    padding-left: 220px;
+}
+
+#rounds {
+    padding-left: 120px;
+}

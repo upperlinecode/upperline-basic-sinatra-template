@@ -2,10 +2,11 @@
     <head>
        <link rel="stylesheet" href="css/style.css">        
     </head>
-        <body>
-            <h1>Workout Overview</h1>
-            <h3><%= @workout.rounds %></h3>
-            <ul>
+        <body id="resBod">
+            <h1 id="resTitle">Workout Overview</h1>
+            <h3 id="rounds"><%= @workout.rounds %>:</h3>
+            <ul id="routine">
+                <img src="../images/ResultPic.jpg" id="resPic">
                 <% @workout.wod %>
                 <% @workout.wod.each do |rep| %>
                 <li><%= rep + "<br>" %></li>

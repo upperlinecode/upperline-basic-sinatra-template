@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Bubbler+One');
+/*background color rgb(85, 180, 212)*/
+
+body {
+    font-family: 'Lobster', cursive;
+    background-color:rgb(85, 180, 212);
+    color:white;
+    text-align: center;
+    margin-top:50px;
+    margin-left:150px;
+    margin-right:150px; 
+}
+
+#button {
+    font-family: 'Lobster', cursive;
+    color:white;
+    background-color:rgb(85, 180, 212);
+}
+
+p {
+    font-family: 'Bubbler One', sans-serif;
+}
+
+h3 {
+    font-family: 'Bubbler One', sans-serif;
+}
+
+#img1 {
+    position: absolute;
+    right: 0px;
+}
+
+#img2 {
+    position: absolute;
+    left: 0px;
+}

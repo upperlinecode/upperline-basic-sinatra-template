@@ -7,6 +7,9 @@ body {
     background-color:rgb(85, 180, 212);
     color:white;
     text-align: center;
+    margin-top:50px;
+    margin-left:150px;
+    margin-right:150px; 
 }
 
 #button {
@@ -21,4 +24,12 @@ p {
 
 h3 {
     font-family: 'Bubbler One', sans-serif;
+}
+
+#img1 {
+    justify:left;
+}
+
+#img2 {
+    justify:right;
 }

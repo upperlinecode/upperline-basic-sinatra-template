@@ -14,6 +14,10 @@ class ApplicationController < Sinatra::Base
   get '/pageone' do
     erb :pageone
   end
+   get '/fight' do
+    erb :fight
+  end
+  
   
   post '/finalpage' do
     @winorlose = params["winorlose"]

@@ -3,42 +3,42 @@
         <link rel="stylesheet" href="css/style.css">
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        
         <!-- Optional theme -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-        
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-        
     </head>
-    <body>
+    <body id="bod">
+        <div id="title">
+                <p>GRINDIN<hr class="break">FOR<hr class="break">GAINS</p> 
+        </div>
         <div class="container">
-            <div class= "text-center title">
-                <h1>GRINDIN<br>FOR<br>GAINS</h1> 
-            </div>
-            <div class="questions">
-                <form method= "post" action="/results">
-                    <h3>Choose your intensity:</h3>
-                    <input type="radio" name="intensity" value ="easy">Easy<br>
-                    <input type="radio" name="intensity" value ="medium">Medium<br>
-                    <input type="radio" name="intensity" value ="hard">Hard<br>
-                    <h3>Choose the length of your workout:</h3>
-                    <input type="radio" name="length" value ="ten">10 Minutes<br>
-                    <input type="radio" name="length" value ="thirty">30 Minutes<br>
-                    <input type="radio" name="length" value ="sixty">60 minutes<br>
-                    <h3> What kind of workout would you like:</h3>
-                    <input type="radio" name="type" value ="cardio">Cardio<br>
-                    <input type="radio" name="type" value ="strength">Strength<br>
-                    <h3> Where are you?</h3>
-                    <input type="radio" name="location" value ="indoors">Indoors<br>
-                    <input type="radio" name="location" value ="outdoors">Outdoors<br>
-                    <h3>What equipment do you have?</h3>
-                    <input type="checkbox" name="topic" value ="none">None<br>
-                    <input type="checkbox" name="topic" value ="dumbells">Dumbells<br>
-                    <input type="checkbox" name="topic" value ="bands">Bands<br><br>
-                    <input type="submit" value = "Find Your Workout!">
-                </form>
+            <div class="row">
+                <div class="col-md-3" id="marg1"></div>
+                <div class="col-md-6" id="questions">
+                    <form method= "post" action="/results">
+                        <h3>Choose your intensity:</h3>
+                        <input type="radio" name="intensity" value ="easy"> Easy<br>
+                        <input type="radio" name="intensity" value ="medium"> Medium<br>
+                        <input type="radio" name="intensity" value ="hard"> Hard<br>
+                        <h3>Choose the length of your workout:</h3>
+                        <input type="radio" name="length" value ="ten"> 10 Minutes<br>
+                        <input type="radio" name="length" value ="thirty"> 30 Minutes<br>
+                        <input type="radio" name="length" value ="sixty"> 60 minutes<br>
+                        <h3> What kind of workout would you like?</h3>
+                        <input type="radio" name="type" value ="cardio"> Cardio<br>
+                        <input type="radio" name="type" value ="strength"> Strength<br>
+                        <h3> Where are you?</h3>
+                        <input type="radio" name="location" value ="indoors"> Indoors<br>
+                        <input type="radio" name="location" value ="outdoors"> Outdoors<br>
+                        <h3>What equipment do you have?</h3>
+                        <input type="checkbox" name="topic" value ="none"> None<br>
+                        <input type="checkbox" name="topic" value ="dumbells"> Dumbells<br>
+                        <input type="checkbox" name="topic" value ="bands"> Bands<br><br>
+                        <input type="submit" value = "Find Your Workout!">
+                    </form>
+                </div>
+                <div class="col-md-3" id="marg2"></div>
             </div>
         </div>
     </body>

@@ -1,19 +1,39 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,900,900i');
 
-.title {
+#bod {
+    background-color: black;
     font-family: 'Raleway';
-    background-image: url("/images/TitlePhoto.jpg");
-    background-repeat: no-repeat;
+    color: black;
+}
+
+#title {
+    background-image: url("../images/TitlePhoto.jpg");
     background-size: cover;
-    height: 103%;
-    margin: ;
+    height: 100%;
+    font-size: 1000%;
+    font-weight: 900;
+    padding-left: 45px;
 }
 
-h1 {
-    font-size: 600%;
-    padding-left: 20px;
+#questions {
+    text-align: center;
+    background-color: white;
+    height: 100%;
 }
 
-.questions {
-    background-color: lightblue;
+#marg1 {
+    background: linear-gradient(to right, #000000 0%, #ffffff 100%);
+    height: 100%;
 }
+
+#marg2 {
+    background: linear-gradient(to right, #ffffff 0%, #000000 100%);
+    height: 100%;
+}
+
+.break {
+    height: 0px;
+    visibility: hidden;
+    margin-bottom: -90px;
+}
+

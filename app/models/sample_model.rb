@@ -8,15 +8,89 @@ class Workout
         @location = location
         @topic = topic
         @wod = []
-        @resttime = "error"
-        @movementscardio = ["lunges","goblet squats","burpees","mountain climbers","squat jumps","wallsit","jumping jacks","pushups","plank"]
-        @movementsstrength = ["plank","pushups"]
-        @movementsstrengthdumbells = ["dumbell snatches","kettle bell swings","hammer curls","tricep extension","bicep curls to shoulder press"]
-        @worktime = "error"
+        @resttime = 0
+        @wcardio = ["1 minute lunges","1 minute goblet squats","1 minute burpees","1 minute mountain climbers","1 minute squat jumps","1 minute wallsit","1 minute jumping jacks","1 minute pushups","1 minute plank"]
+        @wstrength = ["1 minute plank","1 minute seconds pushups","1 minute alternating side plank","1 minute squats","1 minute burpees","1 minute lunges","1 minute crunches","1 minute dips"]
+        @wdumbells = ["1 minute dumbell snatches","1 minute kettle bell swings","1 minute hammer curls","1 minute tricep extension","1 minute bicep curls to shoulder press","1 minute reverse curls","1 minute stationary lunge with dumbells by side"]
+        @worktime = 0
     end
     def rest 
         calcrest
-        @wod.push(@resttime + "seconds rest")
+        @wod.push("#{@resttime} seconds rest")
+    end
+    def wodmaker
+        
+        if @intensity == "easy"
+            if @topic == "dumbells"
+                i = 0
+                until i == 5 do
+                    @wod.push(@wdumbells[i])
+                    i += 1
+                    rest
+                end
+            elsif @topic == "none" && @type == "strength"
+                 i = 0
+                until i == 5 do
+                    @wod.push(@wstrength[i])
+                    i += 1
+                    rest
+                end
+            elsif @topic == "none" && @type == "cardio"
+                 i = 0
+                until i == 5 do
+                    @wod.push(@wcardio[i])
+                    i += 1
+                    rest
+                end
+            end
+            
+        elsif @intensity == "medium"
+            if @topic == "dumbells"
+                i = 0
+                until i == 6 do
+                 @wod.push(@wdumbells[i])
+                    i += 1
+                    rest
+                end
+            elsif @topic == "none" && @type == "strength"
+                i = 0
+                until i == 6 do
+                    @wod.push(@wstrength[i])
+                    i += 1
+                    rest
+                end
+            elsif @topic == "none" && @type == "cardio"
+                 i = 0
+                until i == 6 do
+                    @wod.push(@wcardio[i])
+                    i += 1
+                    rest
+                end
+            end
+        elsif @intensity == "hard"
+            if @topic == "dumbells"
+                i = 0
+                until i == 7 do
+                 @wod.push(@wdumbells[i])
+                    i += 1
+                    rest
+                end
+            elsif @topic == "none" && @type == "strength"
+                 i = 0
+                until i == 7 do
+                    @wod.push(@wstrength[i])
+                    i += 1
+                    rest
+                end
+            elsif @topic == "none" && @type == "cardio"
+                 i = 0
+                until i == 7 do
+                    @wod.push(@wcardio[i])
+                    i += 1
+                    rest
+                end
+            end
+        end
     end
     # def wodmaker
     #     if @type == "strength"
@@ -55,9 +129,11 @@ class Workout
     # end
     def rounds
         if @length == "thirty"
-            return "DO THREE ROUNDS"
+            return "DO THREE SET"
         elsif @length == "sixty"
-            return "DO SIX ROUNDS"
+            return "DO SIX SET"
+        elsif @length == "ten"
+            return "DO ONE SET"
         end
     end
     def calcrest

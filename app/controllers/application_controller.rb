@@ -10,4 +10,30 @@ class ApplicationController < Sinatra::Base
   get '/' do
     return erb :index
   end
+  
+  post '/whofor' do
+    answers = params.values 
+    @total = 0 
+    answers.each do |answer|
+      @total += answer.to_i 
+    end
+    puts @total
+    
+    @combo = healtheffects(@total)
+    if @combo == "onyou"
+      erb :onyou
+    elsif @combo == "onsome"
+      erb :onsome
+    end
+    
+    @combo = onyou(@total)
+    if @combo == "Healthy_Results"
+      erb :HealthyResults
+    elsif @combo == "Heat_Exhaustion"
+      erb :Heat_Exhaustion
+    elsif @combo == "Heat_Stroke"
+      erb :Heat_Stroke
+    end
+  end
+  
 end

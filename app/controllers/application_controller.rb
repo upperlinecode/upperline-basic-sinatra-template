@@ -26,6 +26,14 @@ class ApplicationController < Sinatra::Base
       erb :onsome
     end
     
+  post '/yourresults' do
+    answers = params.values 
+    @total = 0 
+    answers.each do |answer|
+      @total += answer.to_i 
+    end
+    puts @total
+    
     @combo = onyou(@total)
     if @combo == "Healthy_Results"
       erb :HealthyResults
@@ -34,6 +42,6 @@ class ApplicationController < Sinatra::Base
     elsif @combo == "Heat_Stroke"
       erb :Heat_Stroke
     end
-  end
   
 end
+

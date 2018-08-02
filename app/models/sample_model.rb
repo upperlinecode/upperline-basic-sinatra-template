@@ -26,5 +26,5 @@ def onsome(value)
   elsif value >= 81 
     return "SHeat_Stroke"
   end
-  
+end
 end

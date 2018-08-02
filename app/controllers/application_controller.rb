@@ -43,6 +43,7 @@ class ApplicationController < Sinatra::Base
     elsif @combo == "YHeat_Stroke"
       erb :YHeat_Stroke
     end
+  end
   
   post '/theirresults' do
     answers = params.values 
@@ -60,6 +61,6 @@ class ApplicationController < Sinatra::Base
     elsif @combo == "SHeat_Stroke"
       erb :SHeat_Stroke
     end
+  end
   
-end
 end

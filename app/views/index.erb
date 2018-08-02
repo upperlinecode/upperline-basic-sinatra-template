@@ -1,60 +1,32 @@
-
 <!DOCTYPE html>
 <html>
   
   <head>
-    <title>Calma Koala Heat Effects</title>
+    <title>Meditation Quiz</title>
   </head>
   
   <body>
-    <h1>Calma Koala</h1>
-    <h2>Heat Effects Quiz</h2>
-    <p>It might be hot outside, but that certainly doesn't stop us from doing things outside! This quiz is designed to help you learn about heat stroke and heat exhaustion and determine if you or a friend have either. If you're feeling a little unwell or want to learn about heat effects, take the quiz!</p>
+    <h1>Meditation Quiz</h1>
     
-    <form action="/whofor" method="post">
+    <form action="/results" method="post">
       
-      <h3>Are you taking this for yourself or someone else?</h3>
-      <input type="radio" name="person" value="20"><h4>Myself</h4>
-      <input type="radio" name="person" value="5"><h4>Someone Else</h4>
+      <h2>Would you want to use an app or online video as a resource to help you meditate? </h2>
+      <input type="radio" name="Appvid" value="10">App 
+      <input type="radio" name="Appvid" value="100">Online Video
+
+      <h2>Would you prefer a male or female instructor?</h2>
+      <input type="radio" name="Gender" value="2">Male
+      <input type="radio" name="Gender" value="5">Female
       
-      <button type="submit" class="new">Submit</button>
+      <h2>Do you want guided or non-guided lessons?</h2>
+      <input type="radio" name="Lesson" value="10">Guided
+      <input type="radio" name="Lesson" value="1">Non-guided
+      
+    
+
+      <button type="submit" class="new">See your personalized meditation plan here!</button>
       
     </form>
   </body>
   
 </html>
-<style>
-  body {
-    background-color: #E5F2FF
-  }
-  .new {
-    background-color: white;
-    color: #DDA0DD;
-    padding: 15px  32px;
-    font-size:24px;
-    font-family: fantasy;
-    border: 5px solid #DDA0DD;
-  }
-  h1 {
-    text-align: center;
-    color: #DDA0DD;
-    font-family: fantasy;
-    font-size: 60px;
-  }
-  h2 { 
-    font-family: american typewriter;
-    color: #DAA520;
-  }
-  h3 {
-    color: #DAA520;
-    font-family: american typewriter;
-  }
-  h4 {
-    color: #DAA520;
-    font-family: american typewriter;
-  }
-  p {
-    color: #DAA520;
-    font-family: american typewriter;
-  }
-</style>

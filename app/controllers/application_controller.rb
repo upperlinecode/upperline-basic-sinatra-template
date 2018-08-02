@@ -36,12 +36,12 @@ class ApplicationController < Sinatra::Base
     puts @total
     
     @combo = onyou(@total)
-    if @combo == "Healthy_Results"
-      erb :Healthy_Results
-    elsif @combo == "Heat_Exhaustion"
-      erb :Heat_Exhaustion
-    elsif @combo == "Heat_Stroke"
-      erb :Heat_Stroke
+    if @combo == "YHealthy_Results"
+      erb :YHealthy_Results
+    elsif @combo == "YHeat_Exhaustion"
+      erb :YHeat_Exhaustion
+    elsif @combo == "YHeat_Stroke"
+      erb :YHeat_Stroke
     end
   
 end

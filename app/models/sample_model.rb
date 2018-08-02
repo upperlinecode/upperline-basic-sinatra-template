@@ -11,11 +11,11 @@ end
 def onyou(value)
   
   if value <= 40
-    return "Healthy_Results"
+    return "YHealthy_Results"
   elsif value >= 41 && value <= 80
-    return "Heat_Exhaustion"
+    return "YHeat_Exhaustion"
   elsif value >= 81 
-    return "Heat_Stroke"
+    return "YHeat_Stroke"
   end
   
 end

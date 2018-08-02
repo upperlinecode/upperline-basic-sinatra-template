@@ -44,5 +44,22 @@ class ApplicationController < Sinatra::Base
       erb :YHeat_Stroke
     end
   
+  post '/theirresults' do
+    answers = params.values 
+    @total = 0 
+    answers.each do |answer|
+      @total += answer.to_i 
+    end
+    puts @total
+    
+    @combo = onsome(@total)
+    if @combo == "SHealthy_Results"
+      erb :SHealthy_Results
+    elsif @combo == "SHeat_Exhaustion"
+      erb :SHeat_Exhaustion
+    elsif @combo == "SHeat_Stroke"
+      erb :SHeat_Stroke
+    end
+  
 end
 end

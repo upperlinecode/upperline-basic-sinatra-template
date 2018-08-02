@@ -18,4 +18,13 @@ def onyou(value)
     return "YHeat_Stroke"
   end
   
+def onsome(value)
+  if value <= 40
+    return "SHealthy_Results"
+  elsif value >= 41 && value <= 80
+    return "SHeat_Exhaustion"
+  elsif value >= 81 
+    return "SHeat_Stroke"
+  end
+  
 end

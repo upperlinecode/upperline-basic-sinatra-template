@@ -7,6 +7,18 @@ class ApplicationController < Sinatra::Base
     set :views, 'app/views'
   end
 
+  get '/' do
+    return erb :home
+  end
+  
+  get '/physical'
+    return erb :physical
+  end
+  
+  get '/mental'
+    return erb :mental
+  end
+
   get '/heatquiz' do
     return erb :heatquiz
   end

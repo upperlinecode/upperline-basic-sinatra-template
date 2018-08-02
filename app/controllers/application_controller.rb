@@ -25,6 +25,7 @@ class ApplicationController < Sinatra::Base
     elsif @combo == "onsome"
       erb :onsome
     end
+  end 
     
   post '/yourresults' do
     answers = params.values 
@@ -44,4 +45,4 @@ class ApplicationController < Sinatra::Base
     end
   
 end
-
+end

@@ -35,11 +35,11 @@ class ApplicationController < Sinatra::Base
     return erb :physical1
   end
   
-  get 'physical2' do
+  get '/physical2' do
     return erb :physical2
   end
   
-  get 'physical3' do
+  get '/physical3' do
     return erb :physical3
   end
 
@@ -97,6 +97,10 @@ class ApplicationController < Sinatra::Base
     elsif @combo == "SHeat_Stroke"
       erb :SHeat_Stroke
     end
+  end
+  
+  get '/index' do
+    return erb :index
   end
   
   post '/results' do

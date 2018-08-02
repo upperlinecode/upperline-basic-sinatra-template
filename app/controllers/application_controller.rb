@@ -11,11 +11,11 @@ class ApplicationController < Sinatra::Base
     return erb :home
   end
   
-  get '/physical'
-    return erb :physical
+  get '/physical' do
+     return erb :physical
   end
   
-  get '/mental'
+  get '/mental' do
     return erb :mental
   end
 
@@ -75,10 +75,6 @@ class ApplicationController < Sinatra::Base
     end
   end
   
-  get '/' do
-    return erb :index
-  end
-  
   post '/results' do
     answers = params.values 
     @total = 0 
@@ -100,9 +96,6 @@ class ApplicationController < Sinatra::Base
        erb :OP5
      elsif @combo == "op6"
        erb :OP6
-       
     end 
   end
 end 
-  
-end

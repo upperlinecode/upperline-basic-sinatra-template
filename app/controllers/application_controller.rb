@@ -18,6 +18,30 @@ class ApplicationController < Sinatra::Base
   get '/mental' do
     return erb :mental
   end
+  
+  get '/mental1' do
+    return erb :mental1
+  end
+  
+  get '/mental2' do
+    return erb :mental2
+  end
+  
+  get '/mental3' do
+    return erb :mental3
+  end
+  
+  get '/physical1' do
+    return erb :physical1
+  end
+  
+  get 'physical2' do
+    return erb :physical2
+  end
+  
+  get 'physical3' do
+    return erb :physical3
+  end
 
   get '/heatquiz' do
     return erb :heatquiz

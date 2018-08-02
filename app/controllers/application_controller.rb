@@ -37,7 +37,7 @@ class ApplicationController < Sinatra::Base
     
     @combo = onyou(@total)
     if @combo == "Healthy_Results"
-      erb :HealthyResults
+      erb :Healthy_Results
     elsif @combo == "Heat_Exhaustion"
       erb :Heat_Exhaustion
     elsif @combo == "Heat_Stroke"

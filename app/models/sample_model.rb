@@ -17,7 +17,7 @@ def onyou(value)
   elsif value >= 81 
     return "YHeat_Stroke"
   end
-  
+end   
 def onsome(value)
   if value <= 40
     return "SHealthy_Results"
@@ -26,5 +26,4 @@ def onsome(value)
   elsif value >= 81 
     return "SHeat_Stroke"
   end
-end
 end
